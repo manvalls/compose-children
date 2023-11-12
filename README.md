@@ -9,7 +9,7 @@ type ComposedComponentProps = Component1Props &
   Component2Props &
   Component3Props;
 
-const ComposedComponent = composeChildren<ComposedProps>(
+const ComposedComponent = composeChildren<ComposedComponentProps>(
   Component1,
   Component2,
   Component3,
