@@ -23,7 +23,7 @@ type ComposedComponentProps = Component1Props &
   Component2Props &
   Component3Props;
 
-const ComposedComponent = ({ children, ...props }: ComposedProps) => (
+const ComposedComponent = ({ children, ...props }: ComposedComponentProps) => (
   <Component1 {...props}>
     <Component2 {...props}>
       <Component3 {...props}>{children}</Component3>
